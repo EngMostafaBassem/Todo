@@ -1,0 +1,137 @@
+.todo_container{
+    margin: 50px;
+    background-color:white;
+    box-shadow: 1px 1px 5px #00000020;
+    width: 30%;
+    min-height: 3rem;
+    position: relative;
+}
+
+.btn-generate{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,10px);
+    background-color: #9171b0;
+    border-radius: 15px;
+    color: white;
+    border: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease-out;
+    
+    
+}
+
+.btn-generate:hover{
+    box-shadow: 0 0 5px #9171b0;
+}
+
+.form-container{
+   
+    background-color:white;
+    box-shadow: 1px 1px 5px #00000050;
+    position: fixed;
+    width: 30%;
+    top:0;
+    left: 50%;
+
+    animation: animatePop 0.2s ease-out forwards;
+    z-index: 9999;
+    border: 2px solid  #9171b0;
+   
+
+}
+.form-container form{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+   
+    
+}
+
+.form-container form input{
+    border:1px solid #9171b0;
+    border-radius: 10px;
+    height: 25px;
+    flex: 0 0 70%;
+    margin-right: auto;
+    padding-left: 10px;
+    outline: 0;
+    color:#9171b0 ;
+}
+.form-container form input::placeholder{
+ color:#9171b0 ;
+}
+
+.form-container form button{
+    background-color: #9171b0;
+    border-radius: 15px;
+    color: white;
+    border: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease-out;
+    
+}
+.hidden{
+    display: none;
+}
+@keyframes animatePop{
+    0%{
+         transform: translate(-50%,0);
+    }
+    50%{
+        transform: translate(-50%,100px);
+    }
+
+    100%{
+        transform: translate(-50%,150px);
+    
+    }
+}
+
+.todoItem_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+.row{
+    display: flex;
+    width: 80%;
+    
+    
+}
+
+.todoItem_container .row label{
+    position: relative;
+    color: #555;  
+    padding-left: 20px;
+    cursor: pointer;
+    margin-right: auto;
+    
+} 
+
+
+.todo_header{
+    background-color:#9171b0;
+    color: white;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    font-weight: bold;
+    position: fixed;
+    top:5%
+
+}
+.icon:hover{
+    color: red;
+}
+
+ 
